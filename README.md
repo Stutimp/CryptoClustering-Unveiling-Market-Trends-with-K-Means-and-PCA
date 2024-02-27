@@ -1,7 +1,7 @@
 # CryptoClustering
 
 ### Project on Unsupervised learning
-    In this Crypto Clustering assignment, I am utilizing my knowledge of Python and Unsupervised learning to predict if currencies are affected by 24-hour or 7-day price changes.
+- In this Crypto Clustering assignment, I am utilizing my knowledge of Python and Unsupervised learning to predict if currencies are affected by 24-hour or 7-day price changes.
 
 ### Overview
 
