@@ -1,17 +1,29 @@
-# CryptoClustering
+# CryptoClustering: Unveiling Market Trends with K-Means and PCA
 
-### Project on Unsupervised learning
-- In this Crypto Clustering assignment, I am utilizing my knowledge of Python and Unsupervised learning to predict if currencies are affected by 24-hour or 7-day price changes.
+## Overview
+This project uses Python and unsupervised learning techniques to analyze the impact of 24-hour and 7-day price changes on cryptocurrencies. The goal is to cluster cryptocurrencies based on their performance over these time periods using K-Means clustering and Principal Component Analysis (PCA).
 
-### Overview
+
+### Steps Taken
+
+1. Prepare the Data
 
 - First I imported all the required libraries and dependencies and loaded the data into a Pandas DataFrame using pd.read_csv() function. After some exploratory analysis I plotted my data to see what's in my DataFrame.
 
 - After that using `StandardScaler()` module from scikit-learn I normalized the dataset from the CSV file and created a new dataframe called, df_crypto_scaled, with scaled Data with coin_id column as an index.
 
+2. Finding the Optimal K and Clustering with K-Means
+
 - Now I found out the best value for K or optimum cluster number with the Original scaled Dataset by using KMeans Model and creating a new dataframe with a newly generated column of Crypto Cluster predictions in order to make a scatter plot that would give a meaningful visualization on the relationship between two types of price change percentages, they are, price percentage change in 24 hours and price percentage change in 7 days.The clusters seem to show how different cryptocurrencies behave in terms of price changes over these two different time periods.
 
-- After that we optimized the clusters with Principal Component Analysis (PCA) and able to reduced the multiple features to only three pricicipal components/features those would still contribute to the maximum variance in the dataset. We made a new PCA dataframe with thereafter and by using the KMeans and elbow curve method , finally created a PCA dataframe with a new column for the predicted CryptoClusters numbers. And finally we generated a scatterplots with PCA1 and PCA2 columns in order to observe the relationship between these two newly generated featured columns.
+3. Optimize Clusters with PCA
+
+- After that we optimized the clusters with Principal Component Analysis (PCA) and able to reduced the multiple features to only three pricicipal components/features those would still contribute to the maximum variance in the dataset. We made a new PCA dataframe with thereafter and by using the KMeans and elbow curve method , finally created a PCA dataframe with a new column for the predicted CryptoClusters numbers. 
+
+- And finally we generated a scatterplots with PCA1 and PCA2 columns in order to observe the relationship between these two newly generated featured columns.
+
+4. Vizualize and Compare Results
+
 - As a final part of the assignments I made composite plots for elbow curves with original data and PCA data. Additionally also generated composite scatter plots combining the plots from both, original dataset and PCA dataset side by side in order to understand the impact of using fewer features before and after using PCA analysis to cluster the data using K-Means. 
 
 ### Conclusion
@@ -25,11 +37,15 @@ iii) Noise Reduction: As the chart displays, the PCA process helped to filter ou
 
 In conclusion, using fewer, more relevant features via PCA for K-Means clustering appears to have a positive impact on the clarity and quality of the resulting clusters. It seems to enhance cluster separation, density, and possibly the interpretability of the clustering solution.
 
-references for creating composite plots:
+### Applications 
+
+This project demonstrates the use of unsupervised learning techniques, specifically K-Means clustering and PCA, to analyze and group cryptocurrencies based on market performance. The results provide insights into how dimensionality reduction can impact clustering outcomes and offer a better understanding of cryptocurrency behavior.
+
+References for creating composite plots:
 https://holoviz.org/tutorial/Composing_Plots.html
 
 Thank you !
 
-Regards,
+Author
 
 Stuti Poudel
